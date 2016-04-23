@@ -1,5 +1,188 @@
 <% provide(:title, 'Contact') %>
-<h1>Contact</h1>
-<p>
-  Contacts are Kevin Dennis, Shonagh Cheevers and Carlos Alvarez from NCI Web Technologies 2016 Class
-</p>
+
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<img alt="full screen background image" src="assets/background.jpg" id="full-screen-background-image" /> <!-- Artist provided permission to use image http://www.deviantart.com/art/books-67219544-->
+
+<section class="content">
+ 
+ <div class="cd-slider-wrapper">
+		<ul class="cd-slider">
+			<li class="is-visible">
+				<div class="cd-half-block image"></div>
+
+				<div class="cd-half-block content">
+					<div>
+						<h3>Penny for your thoughts</h3>
+						
+						<p> Send us your feedback and be in with a chance to win vouchers for our Online Store </p>
+
+
+						<a href="mailto:kevdennis@gmail.com?sqs_title=Drop+us+a+line" class="btn">Send Email</a>
+					</div>
+				</div>
+			</li> 
+
+			<li>
+				<div class="cd-half-block image"></div>
+
+				<div class="cd-half-block content light-bg">
+					<div>
+						<h2>Locations</h2>
+						<p>
+						 We have locations right in the heart of both Dublin and Galway City. Still not close enough? Check out our new Online Store!
+						 
+						 
+						 
+						</p>
+					</div>
+				</div> <!-- .cd-half-block.content -->
+			</li>
+
+			<li>
+				<div class="cd-half-block image"></div>
+
+				<div class="cd-half-block content">
+					<div>
+						<h2> Because Old is best...</h2>
+						<p>
+							We're right on your doorstep so come pay us a visit and browse through our Vintage book collection. 
+						</p>
+					</div>
+				</div> <!-- .cd-half-block.content -->
+			</li>
+
+			<li>
+				<div class="cd-half-block image"></div>
+
+				<div class="cd-half-block content">
+					<div>
+						<h2>Readers Hour</h2>
+						<p>
+						 Join us every Tuesday and Thursday at 7.30 for our Readers hour sessions. The finest up and coming local literary talent will be on display accompanied with the finest of coffee.
+						</p>
+					</div>
+				</div> <!-- .cd-half-block.content -->
+			</li>
+		</ul> <!-- .cd-slider -->
+	</div> <!-- .cd-slider-wrapper -->
+
+
+		<button id="mapbanner"> Select to Change Location </button>
+		
+		
+	
+	
+	
+	
+	<div id= "mapwrapper">
+	
+	<div class = "contactwrapper">
+		
+			
+		<table>
+				 
+			<tr>
+				<td class="title">Dublin Location <img alt="arrow image" src="assets/arrow.png" id="arrow" /></td>
+				<td><img src="assets/telephone.png"> onlinebooks.ie </td>
+				<td><img src="assets/address.png"> Vintage Books, 14 Exchequer Street, D8</td>
+				<td class="hours">Opening Hours:</td>
+				
+				
+			</tr>
+			<tr>
+				<td></td>
+				<td><img src="assets/mobile.png"> 086 66 666666</td>
+				<td></td>
+				<td class="hours">Mon-Wed:</td>
+				<td class="hours">09.00 - 17.00</td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="hours">Thurs-Fri:</td>
+				<td class="hours">09.00 - 21.00</td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="hours">Sat-Sun:</td>
+				<td class="hours">10.00 - 16.00</td>
+			</tr>
+			
+		</table>
+			
+	
+	</div>		
+			<div id="map">
+			</div>
+			
+	</div>	
+		
+		
+		<div id= "mapwrapper2">
+		<div class = "contactwrapper">
+		
+			<table>
+				 
+			<tr>
+				<td class="title">Galway Location <img alt="arrow image" src="assets/arrow.png" id="arrow" /></td>
+				<td><img src="assets/telephone.png"> onlinebooks.ie </td>
+				<td><img src="assets/address.png"> Vintage Books, 6 Market Street, Galway</td>
+				<td class="hours">Opening Hours:</td>
+				
+				
+			</tr>
+			<tr>
+				<td></td>
+				<td><img src="assets/mobile.png"> 087 77 77777</td>
+				<td></td>
+				<td class="hours">Mon-Wed:</td>
+				<td class="hours">09.00 - 17.00</td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="hours">Thurs-Fri:</td>
+				<td class="hours">09.00 - 18.30</td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="hours">Sat-Sun:</td>
+				<td class="hours">Closed</td>
+			</tr>
+			
+		</table>
+			
+		
+			
+	
+	</div>		
+			<div id="map2">
+			</div>
+		
+		
+		</div>
+		
+		
+		
+		
+		
+		
+		
+
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbhuKkFM8Jby98bTncJ7OOxHiYglilL_A&callback=initMap" async defer></script>
+		
+</section>
