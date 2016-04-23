@@ -1,4 +1,6 @@
 <% provide(:title, "About") %>
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
 <section class="content">
 	
@@ -39,7 +41,7 @@
 	</div>
 
 	<div class="innerContainerRight2">
-		<img src="assets/staff.jpg" width="300" height="200"/>
+		<%= image_tag 'assets/staff.jpg' width="300" height="100" %>
 		
 		<h1>Edie Grey - Staff</h1>
 		
