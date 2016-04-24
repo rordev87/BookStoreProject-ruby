@@ -1,0 +1,21 @@
+<h1>Listing books</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Format</th>
+    <th>Availability</th>
+  </tr>
+ 
+  <% @books.each do |book| %>
+    <tr>
+      <td><%= book.title %></td>
+      <td><%= book.description %></td>
+      <td><%= book.price %></td>
+      <td><%= book.format %></td>
+      <td><%= book.availability %></td>
+    </tr>
+  <% end %>
+</table>
