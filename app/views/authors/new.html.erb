@@ -3,14 +3,9 @@
 <%= form_for :author, url: authors_path, html: {class: "new_sc_form"} do |f| %>
 
    <p>
-    <%= f.label :surname %><br>
-    <%= f.text_field :surname %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
    </p>
-   
-    <p>
-    <%= f.label :firstname %><br>
-    <%= f.text_field :firstname %>
-    </p>
  
   <p>
     <%= f.label :bio %><br>

@@ -9,7 +9,7 @@
    
     <p>
     <%= f.label :author %><br>
-    <%= f.text_field :author %>
+    <%= f.select :author_id, options_for_select(Author.all.map{|s|[s.name, s.id]}) %>
     </p>
  
   <p>
