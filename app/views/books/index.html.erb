@@ -13,7 +13,7 @@
     <!-- http://stackoverflow.com/questions/1086360/how-do-i-wrap-link-to-around-some-html-ruby-code -->
     <tr>
       <td><%= link_to book_path(book) do %><%= book.title %><% end %></td>
-      <td><%= book.author.name %></td>
+      <td><%= link_to author_path(book.author) do %><%=book.author.name %><% end %></td>
       <td><%= number_to_currency book.price %></td>
       <td><%= book.format %></td>
       <td><%= book.availability %></td>

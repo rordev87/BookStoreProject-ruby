@@ -1,15 +1,14 @@
 <h1>Listing authors</h1>
  
-<table>
+<table class="books_table">
   <tr>
     <th>Name</th>
-    <th>Bio</th>
   </tr>
  
   <% @authors.each do |author| %>
+  <!-- http://stackoverflow.com/questions/1086360/how-do-i-wrap-link-to-around-some-html-ruby-code -->
     <tr>
-      <td><%= author.name %></td>
-      <td><%= author.bio %></td>
+      <td><%= link_to author_path(author) do %><%=author.name %><% end %></td>
     </tr>
   <% end %>
 </table>
