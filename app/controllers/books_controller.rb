@@ -1,6 +1,8 @@
 class BooksController < ApplicationController
     def index
         @books = Book.all
+        
+        # http://www.korenlc.com/creating-a-simple-search-in-rails-4/
         if params[:search]
             @books = Book.search(params[:search])
         else

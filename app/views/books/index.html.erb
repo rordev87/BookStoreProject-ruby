@@ -1,5 +1,6 @@
 <h1>Listing books</h1>
 
+<!-- http://www.korenlc.com/creating-a-simple-search-in-rails-4/ -->
 <% if @books.present? %>
 <table class="books_table">
   <tr>
@@ -25,6 +26,7 @@
   <p>There are no books containing the term(s) <%= params[:search] %>.</p>
 <% end %>
 
+<!-- http://www.korenlc.com/creating-a-simple-search-in-rails-4/ -->
 <%= form_tag(books_path, :method => "get", id: "search-form") do %>
 <%= text_field_tag :search, params[:search], placeholder: "Search Books" %>
 <%= submit_tag "Search" %>
