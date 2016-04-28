@@ -32,12 +32,12 @@ end
 #end
 
 books_list = [
-    [ "The Catcher in the Rye", 1, "The Catcher in the Rye is a 1951 novel by J. D. Salinger. A controversial novel originally published for adults, it has since become popular with adolescent readers for its themes of teenage angst and alienation", 20.00, "Hardback", "Available"],
-    [ "Franny and Zooey", 1, "Franny and Zooey is a book by American author J. D. Salinger which comprises his short story Franny and novella Zooey", 10.00, "Paperback", "Available"],
-    ["The Great Gatsby", 2, "The Great Gatsby is a 1925 novel written by American author F. Scott Fitzgerald that follows a cast of characters living in the fictional town of West Egg on prosperous Long Island in the summer of 1922", 30.00, "Hardback", "Available"],
-    ["Tender Is the Night", 2, "Tender Is the Night is a novel by American writer F. Scott Fitzgerald. It was his fourth and final completed novel, and was first published in Scribner's Magazine between January and April 1934 in four issues", 15.00, "Paperback", "Available"],
-    ["The Old Man and the Sea", 3, "The Old Man and the Sea is a short novel written by the American author Ernest Hemingway in 1951 in Bimini, Bahamas, and published in 1952. It was the last major work of fiction by Hemingway that was published during his lifetime.", 15.00, "Paperback", "Available"],
-    ["A Moveable Feast", 3, "A Moveable Feast is a memoir by American author Ernest Hemingway about his years as a struggling, young, expatriate journalist and writer in Paris in the 1920s.", 25.00, "Hardback", "Unavailable"], 
+    [ "The Catcher in the Rye", 1, "The Catcher in the Rye is a 1951 novel by J. D. Salinger. A controversial novel originally published for adults, it has since become popular with adolescent readers for its themes of teenage angst and alienation", 20.00, "Hardback", 100],
+    [ "Franny and Zooey", 1, "Franny and Zooey is a book by American author J. D. Salinger which comprises his short story Franny and novella Zooey", 10.00, "Paperback", 350],
+    ["The Great Gatsby", 2, "The Great Gatsby is a 1925 novel written by American author F. Scott Fitzgerald that follows a cast of characters living in the fictional town of West Egg on prosperous Long Island in the summer of 1922", 30.00, "Hardback", 100],
+    ["Tender Is the Night", 2, "Tender Is the Night is a novel by American writer F. Scott Fitzgerald. It was his fourth and final completed novel, and was first published in Scribner's Magazine between January and April 1934 in four issues", 15.00, "Paperback", 200],
+    ["The Old Man and the Sea", 3, "The Old Man and the Sea is a short novel written by the American author Ernest Hemingway in 1951 in Bimini, Bahamas, and published in 1952. It was the last major work of fiction by Hemingway that was published during his lifetime.", 15.00, "Paperback", 0],
+    ["A Moveable Feast", 3, "A Moveable Feast is a memoir by American author Ernest Hemingway about his years as a struggling, young, expatriate journalist and writer in Paris in the 1920s.", 25.00, "Hardback", 400]
 ]
 
 books_list.each do |title, author_id, description, price, format, availability|
