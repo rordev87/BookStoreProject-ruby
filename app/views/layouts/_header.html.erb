@@ -5,10 +5,8 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home",   root_path %></li>
         <li><%= link_to "Books",   books_path %></li>
-        <% if current_user.admin? %>
+        <% if current_user && current_user.admin? %>
           <li><%= link_to "New Book", new_book_path %></li>
-        <% end %>
-        <% if current_user.admin? %>
           <li><%= link_to "New Author", new_author_path %></li>
         <% end %>
         <li><%= link_to "Help",   help_path %></li>
